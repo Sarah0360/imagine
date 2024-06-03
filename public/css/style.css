@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    color: rgb(53, 21, 21);
+    font-size: 30pt;
+    text-decoration: none;
+    font-family: sans-serifs;
+    letter-spacing: -2px;
+}
+
+#dot {
+    color: rgb(151, 101, 25);
+}
+
+#navlinks{
+    display: flex;
+    list-style: none; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;  
+}
+
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+background-color: rgb(244, 244, 220);
+}
+
+.navitems{
+    text-decoration: none;
+
+}
+
+#hero{
+    display: flex;
+}
+
+#herotxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#heroimg{
+    height: 100vh;
+}
