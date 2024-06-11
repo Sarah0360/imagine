@@ -236,3 +236,64 @@ const users = [
 ]
 <!-- invoking arrays -->
 users;
+
+
+
+// Write a funtion that will take a user with firstname, lastname and return fullname;
+
+function fullName(user) {
+  return {...user,
+          fullName: `${user.firstname} ${user.lastname}`
+          };
+}
+
+const user = {
+  firstname: 'ekua',
+  lastname: 'A'
+}
+
+fullName(user);
+
+
+// Array map
+const users = [
+  {firstname: 'ekua', lastname:'A'},
+  {firstname: 'bella', lastname:'D'},
+  {firstname: 'afia', lastname:'Tyson'},
+  {firstname: 'ana', lastname:'Belle'},
+  {firstname: 'livy', lastname:'Devon'},
+]
+
+users.map(fullName);
+
+
+
+
+// Square of Numbers
+function square(x) {
+  return x*x        
+};
+
+square(2);
+
+const numbers = [1, 9, 9, 8];
+numbers.map(square);
+
+
+// Array filter
+
+function isEven(number) {
+  // if numbers divided by two, has no remainder
+  return number % 2 === 0;        
+}
+
+isEven(9);
+numbers.filter(isEven)
+
+function isOdd(number) {
+  // if numbers divided by two, has a remainder
+  return number % 2 !== 0;        
+}
+
+isOdd(9);
+numbers.filter(is0dd)
